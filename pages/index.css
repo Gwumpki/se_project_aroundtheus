@@ -5,28 +5,3 @@
 @import url(../blocks/logo.css);
 @import url(../blocks/cards.css);
 @import url(../blocks/footer.css);
-
-@media screen and (max-width: 480px) {
-  .profile {
-    background-color: pink;
-    flex-direction: column;
-  }
-
-  .profile__info {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .profile__description {
-    width: 100%;
-    text-align: center;
-  }
-
-  .profile__add-button {
-    margin: 0;
-    max-width: 282px;
-    max-height: 50px;
-  }
-}
