@@ -15,8 +15,10 @@
     <link rel="icon" href="./favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital@0;1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,18 +41,58 @@
           </div>
           <button class="profile__add-button"></button>
         </section>
-        <section class="cards">
+        <section class="cards page__section">
           <ul class="card__list">
             <li class="card">
-              <img
-                src="../se_project_aroundtheus/images/yosemite.jpg"
-                class="card__image"
-              />
+              <img src="./images/yosemite.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">Yosemite Valley</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/lake-louise.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">Lake Louise</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/bald-mountains.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">Bald Mountains</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/latemar.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">Latemar</h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/vanoise.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title card__title-block">
+                  Vanoise National Park
+                </h2>
+                <button class="card__like-button"></button>
+              </div>
+            </li>
+            <li class="card">
+              <img src="./images/lago.jpg" class="card__image" />
+              <div class="card__description">
+                <h2 class="card__title">Lago di Braies</h2>
+                <button class="card__like-button"></button>
+              </div>
             </li>
           </ul>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer page__section">
+        <p class="footer__copyright">© 2022 Around The U.S.</p>
+      </footer>
     </div>
   </body>
 </html>
