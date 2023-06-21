@@ -4,8 +4,17 @@
   padding-bottom: 41px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 620px) {
   .logo {
+    width: 126px;
+    height: 24px;
     margin-left: 27px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .logo {
+    width: 150px;
+    height: 27px;
   }
 }
