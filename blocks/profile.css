@@ -62,9 +62,16 @@
   margin: 0;
 }
 
+@media screen and (max-width: 348px) {
+}
+
 @media screen and (max-width: 620px) {
   .profile {
     flex-direction: column;
+  }
+
+  .profile__image {
+    margin-bottom: 26px;
   }
 
   .profile__info {
