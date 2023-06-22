@@ -72,6 +72,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
+    grid-template-columns: auto;
   }
 
   .profile__title {
@@ -94,6 +95,20 @@
   }
 }
 
+@media screen and (max-width: 674px) {
+  .profile__title {
+    font-size: 22px;
+  }
+
+  .profile__info {
+    grid-template-columns: auto;
+  }
+
+  .profile__add-button {
+    width: 100px;
+  }
+}
+
 @media screen and (max-width: 770px) {
   .profile__title {
     font-size: 30px;
@@ -101,5 +116,9 @@
 
   .profile__description {
     font-size: 16px;
+  }
+
+  .profile__info {
+    grid-template-columns: auto;
   }
 }

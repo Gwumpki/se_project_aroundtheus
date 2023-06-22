@@ -1,6 +1,8 @@
 .cards {
   font-family: "Inter", Arial, sans-serif;
+
   margin-top: 30px;
+  padding: 15px 0 18px;
 }
 
 .card__list {
