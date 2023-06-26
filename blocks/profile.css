@@ -49,6 +49,7 @@
 
 .profile__buttons-active:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .profile__title {
@@ -58,6 +59,9 @@
   grid-area: title;
   margin: 0;
   padding-bottom: 7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__description {
@@ -66,6 +70,9 @@
   font-weight: 400;
   grid-area: description;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 770px) {
