@@ -109,6 +109,11 @@
     grid-template-columns: auto;
   }
 
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+  }
+
   .profile__add-button {
     width: 100px;
   }
@@ -121,6 +126,7 @@
 
   .profile__image {
     margin-bottom: 26px;
+    background-position: center;
   }
 
   .profile__info {
