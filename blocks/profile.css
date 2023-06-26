@@ -126,7 +126,7 @@
 
   .profile__image {
     margin-bottom: 26px;
-    background-position: center;
+    margin-right: 0;
   }
 
   .profile__info {
