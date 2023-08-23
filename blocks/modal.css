@@ -1,0 +1,43 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  /*THIS WOULD ALSO WORK TO CENTER
+   align-items: center;
+  justify-content: center; */
+}
+
+.modal__container {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 36px;
+  border-radius: 10px;
+}
+
+.modal__close {
+  background: transparent url(../images/modal-close-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -45px;
+  right: -45px;
+  /*
+  Another way shown in video so the position isn't dependent on the w & h
+  bottom: calc(100% + 5px);
+  left: calc(100% + 5px);
+  */
+  background-color: black;
+}
+
+.modal__heading {
+  color: black;
+}
