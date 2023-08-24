@@ -6,8 +6,8 @@
   right: 0;
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  /* display: none; */
+  /* display: flex; */
+  display: none;
   padding: 0 19px;
   /*
   THIS WOULD ALSO WORK TO CENTER INSTEAD OF MARGIN AUTO ON CONTAINER
