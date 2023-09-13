@@ -48,9 +48,27 @@ const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
 
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                   Functions                                   ||
+// ! ||--------------------------------------------------------------------------------||
+
 function closePopup() {
   profileEditModal.classList.remove("modal__opened");
 }
+
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                 Event Handlers                                 ||
+// ! ||--------------------------------------------------------------------------------||
+function handleProfileEditSubmit(event) {
+  event.preventDefault();
+  profileTitle.textContent = modalProfileTitleInput.value;
+  profileDescription.textContent = modalProfileDescriptionInput.value;
+  closePopup();
+}
+
+// ! ||--------------------------------------------------------------------------------||
+// ! ||                                 Event Listeners                                ||
+// ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
   modalProfileTitleInput.value = profileTitle.textContent;
@@ -62,12 +80,8 @@ modalCloseButton.addEventListener("click", () => {
   closePopup();
 });
 
-modalProfileEditForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  profileTitle.textContent = modalProfileTitleInput.value;
-  profileDescription.textContent = modalProfileDescriptionInput.value;
-  closePopup();
-});
+modalProfileEditForm.addEventListener("submit", handleProfileEditSubmit);
+
 //best practice to catch the submission of a form rather than just the button as a fail safe like below//
 // modalProfileSaveButton.addEventListener("click", () => {
 //   profileTitle.textContent = modalProfileTitleInput.value;
