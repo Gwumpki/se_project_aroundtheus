@@ -34,14 +34,43 @@ const initialCards = [
 // ! ||                                    Elements;                                   ||
 // ! ||--------------------------------------------------------------------------------||
 
-const profileEditButton = document.querySelector("#profile-edit-button");
+const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const modalCloseButton = document.querySelector("#modal-close-button");
+const profileTitle = document.querySelector(".profile__title"); //done for simplicity and unlikely to use again, but professional would be to create a class .js-profile-title or ID used just for javascript.//
+const profileDescription = document.querySelector(".profile__description");
+const modalProfileTitleInput = document.querySelector(".js-profile-title"); //creating another class just for javascript use//
+const modalProfileDescriptionInput = document.querySelector(
+  ".js-profile-description"
+);
+const modalProfileEditForm = profileEditModal.querySelector(".modal__form");
+const modalProfileSaveButton = profileEditModal.querySelector(
+  "#modal-profile-save-button"
+);
+
+function closePopup() {
+  profileEditModal.classList.remove("modal__opened");
+}
 
 profileEditButton.addEventListener("click", () => {
+  modalProfileTitleInput.value = profileTitle.textContent;
+  modalProfileDescriptionInput.value = profileDescription.textContent;
   profileEditModal.classList.add("modal__opened");
 });
 
 modalCloseButton.addEventListener("click", () => {
-  profileEditModal.classList.remove("modal__opened");
+  closePopup();
 });
+
+modalProfileEditForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  profileTitle.textContent = modalProfileTitleInput.value;
+  profileDescription.textContent = modalProfileDescriptionInput.value;
+  closePopup();
+});
+//best practice to catch the submission of a form rather than just the button as a fail safe like below//
+// modalProfileSaveButton.addEventListener("click", () => {
+//   profileTitle.textContent = modalProfileTitleInput.value;
+//   profileDescription.textContent = modalProfileDescriptionInput.value;
+//   profileEditModal.classList.remove("modal__opened");
+// });

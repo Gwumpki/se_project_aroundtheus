@@ -149,21 +149,26 @@
           class="modal__close"
           id="modal-close-button"
         ></button>
-        <p class="modal__heading">Edit profile</p>
+        <p class="modal__title">Edit profile</p>
         <form class="modal__form">
           <input
             type="text"
             name="title"
-            class="modal__input"
+            class="modal__input js-profile-title"
             placeholder="Name"
           />
           <input
             type="text"
             name="description"
-            class="modal__input"
+            class="modal__input js-profile-description"
             placeholder="Description"
           />
-          <button type="button" aria-label="save" class="modal__save">
+          <button
+            type="submit"
+            aria-label="save"
+            class="modal__save"
+            id="modal-profile-save-button"
+          >
             Save
           </button>
         </form>
