@@ -43,7 +43,7 @@ const modalProfileTitleInput = document.querySelector(".js-profile-title"); //cr
 const modalProfileDescriptionInput = document.querySelector(
   ".js-profile-description"
 );
-const modalProfileEditForm = document.forms["profile - edit - form"];
+const modalProfileEditForm = document.forms["profile-edit-form"];
 const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
