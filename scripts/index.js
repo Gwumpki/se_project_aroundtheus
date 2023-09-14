@@ -43,7 +43,7 @@ const modalProfileTitleInput = document.querySelector(".js-profile-title"); //cr
 const modalProfileDescriptionInput = document.querySelector(
   ".js-profile-description"
 );
-const modalProfileEditForm = profileEditModal.querySelector(".modal__form");
+const modalProfileEditForm = document.forms["profile - edit - form"];
 const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
@@ -56,8 +56,9 @@ const cardTemplate =
 // ! ||--------------------------------------------------------------------------------||
 
 function closePopup() {
-  profileEditModal.classList.remove("modal__opened");
+  profileEditModal.classList.remove("modal_opened");
 }
+//OMG I'M SO SORRY I DID IT LOCALLY AND FORGOT TO PUSH IT TO GIT! (;m;) //
 
 function getCardElement(cardData) {
   //clone the template element with all its content and store it in a cardElement variable
@@ -92,16 +93,14 @@ function handleProfileEditSubmit(event) {
 profileEditButton.addEventListener("click", () => {
   modalProfileTitleInput.value = profileTitle.textContent;
   modalProfileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal__opened");
+  profileEditModal.classList.add("modal_opened");
 });
 
-modalCloseButton.addEventListener("click", () => {
-  closePopup();
-});
+modalCloseButton.addEventListener("click", closePopup);
 
 modalProfileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
-//best practice to catch the submission of a form rather than just the button as a fail safe like below//
+//best practice to catch the submission of a form rather than just the button like below as a fail safe and submit auto handles ENTER presses//
 // modalProfileSaveButton.addEventListener("click", () => {
 //   profileTitle.textContent = modalProfileTitleInput.value;
 //   profileDescription.textContent = modalProfileDescriptionInput.value;
