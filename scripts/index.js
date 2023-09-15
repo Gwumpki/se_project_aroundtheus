@@ -58,7 +58,6 @@ const cardTemplate =
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
 }
-//OMG I'M SO SORRY I DID IT LOCALLY AND FORGOT TO PUSH IT TO GIT! (;m;) //
 
 function getCardElement(cardData) {
   //clone the template element with all its content and store it in a cardElement variable
