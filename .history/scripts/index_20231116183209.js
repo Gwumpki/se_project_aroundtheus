@@ -126,7 +126,7 @@ addNewCardButton.addEventListener("click", () => {
 });
 
 addCardModalCloseButton.addEventListener("click", () => {
-  closePopup(addNewCardModal);
+  op(addNewCardModal);
 });
 
 //best practice to catch the submission of a form rather than just the button like below as a fail safe and submit auto handles ENTER presses//

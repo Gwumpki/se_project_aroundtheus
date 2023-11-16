@@ -121,13 +121,9 @@ profileEditModalCloseButton.addEventListener("click", () => {
 
 modalProfileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
-addNewCardButton.addEventListener("click", () => {
-  openModal(addNewCardModal);
-});
+addNewCardButton.addEventListener("click", openModal);
 
-addCardModalCloseButton.addEventListener("click", () => {
-  closePopup(addNewCardModal);
-});
+addCardModalCloseButton.addEventListener("click", closePopup);
 
 //best practice to catch the submission of a form rather than just the button like below as a fail safe and submit auto handles ENTER presses//
 // modalProfileSaveButton.addEventListener("click", () => {

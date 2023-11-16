@@ -75,7 +75,7 @@
   margin-top: 30px;
 }
 
-.modal__submit {
+.modal__save .modal__create {
   color: #fff;
   border-radius: 2px;
   background: #000;

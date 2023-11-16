@@ -34,11 +34,9 @@ const initialCards = [
 // ! ||                                    Elements;                                   ||
 // ! ||--------------------------------------------------------------------------------||
 
-const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
-const profileEditModalCloseButton = profileEditModal.querySelector(
-  "#modal-close-button"
-);
+const profileEditModal = document.querySelector("#profile-edit-modal");
+const profileEditModalCloseButton = document.querySelector("#modal-close-button");
 const profileTitle = document.querySelector(".profile__title"); //done for simplicity and unlikely to use again, but professional would be to create a class .js-profile-title or ID used just for javascript.//
 const profileDescription = document.querySelector(".profile__description");
 const modalProfileTitleInput = document.querySelector(".js-profile-title"); //creating another class just for javascript use//
@@ -55,12 +53,10 @@ const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
-//Add Card button
+  //Add Card button
 const addNewCardButton = document.querySelector("#profile-add-button");
-const addCardModalCloseButton = document.querySelector(
-  "#add-card-close-button"
-);
-const addNewCardModal = document.querySelector("#add-new-card-modal");
+const addCardModalCloseButton = document.querySelector("#add-card-close-button");
+const addNewCardModal = document.querySelector("#add-new-card-modal"):
 // Form
 
 // ! ||--------------------------------------------------------------------------------||
@@ -121,13 +117,9 @@ profileEditModalCloseButton.addEventListener("click", () => {
 
 modalProfileEditForm.addEventListener("submit", handleProfileEditSubmit);
 
-addNewCardButton.addEventListener("click", () => {
-  openModal(addNewCardModal);
-});
+addNewCardButton.addEventListener("click", openModal);
 
-addCardModalCloseButton.addEventListener("click", () => {
-  closePopup(addNewCardModal);
-});
+addCardModalCloseButton.addEventListener("click", closePopup);
 
 //best practice to catch the submission of a form rather than just the button like below as a fail safe and submit auto handles ENTER presses//
 // modalProfileSaveButton.addEventListener("click", () => {
