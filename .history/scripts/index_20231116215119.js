@@ -52,7 +52,7 @@ const newCardTitleInput =
 const newCardLinkInput = modalAddNewCardForm.querySelector(".js-new-card-link");
 
 //Card Array
-const cardsWrap = document.querySelector(".cards__list");
+const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
@@ -100,9 +100,8 @@ function getCardElement(cardData) {
   return cardElement;
 }
 
-function renderCard(cardData, wrapper) {
-  const cardElement = getCardElement(cardData);
-  wrapper.prepend(cardElement);
+function renderCard(cardData) {
+  const cardElement = getCardElement();
 }
 
 // ! ||--------------------------------------------------------------------------------||
@@ -119,11 +118,11 @@ function handleNewCardCreateSubmit(event) {
   event.preventDefault();
   const name = newCardTitleInput.value;
   const link = newCardLinkInput.value;
-  // const cardElement = getCardElement({
-  //   name,
-  //   link,
-  // });             Not doing this because not supposed to repeat self (D.R.Y)
-  renderCard({ name, link }, cardsWrap);
+  const cardElement = getCardElement({
+    name,
+    link,
+  });
+  return console.log(cardElement);
   closePopup(addNewCardModal);
 }
 // ! ||--------------------------------------------------------------------------------||
@@ -163,7 +162,10 @@ modalAddNewCardForm.addEventListener("submit", handleNewCardCreateSubmit);
 // ! ||                                     Loops                                     ||
 // ! ||--------------------------------------------------------------------------------||
 
-initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
+initialCards.forEach((cardData) => {
+  const cardElement = getCardElement(cardData);
+  cardListEl.append(cardElement);
+});
 
 // Could do this for loop also://
 // for (let i = 0; i < initialCards.length; i++) {

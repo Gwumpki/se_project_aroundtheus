@@ -123,7 +123,7 @@ function handleNewCardCreateSubmit(event) {
   //   name,
   //   link,
   // });             Not doing this because not supposed to repeat self (D.R.Y)
-  renderCard({ name, link }, cardsWrap);
+ renderCard();
   closePopup(addNewCardModal);
 }
 // ! ||--------------------------------------------------------------------------------||
@@ -163,7 +163,7 @@ modalAddNewCardForm.addEventListener("submit", handleNewCardCreateSubmit);
 // ! ||                                     Loops                                     ||
 // ! ||--------------------------------------------------------------------------------||
 
-initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
+initialCards.forEach((cardData) => renderCard(cardData, cardsWrap);
 
 // Could do this for loop also://
 // for (let i = 0; i < initialCards.length; i++) {

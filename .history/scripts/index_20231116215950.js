@@ -119,11 +119,11 @@ function handleNewCardCreateSubmit(event) {
   event.preventDefault();
   const name = newCardTitleInput.value;
   const link = newCardLinkInput.value;
-  // const cardElement = getCardElement({
-  //   name,
-  //   link,
-  // });             Not doing this because not supposed to repeat self (D.R.Y)
-  renderCard({ name, link }, cardsWrap);
+  const cardElement = getCardElement({
+    name,
+    link,
+  });
+  return console.log(cardElement);
   closePopup(addNewCardModal);
 }
 // ! ||--------------------------------------------------------------------------------||
@@ -163,7 +163,7 @@ modalAddNewCardForm.addEventListener("submit", handleNewCardCreateSubmit);
 // ! ||                                     Loops                                     ||
 // ! ||--------------------------------------------------------------------------------||
 
-initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
+initialCards.forEach((cardData) => renderCard();
 
 // Could do this for loop also://
 // for (let i = 0; i < initialCards.length; i++) {
