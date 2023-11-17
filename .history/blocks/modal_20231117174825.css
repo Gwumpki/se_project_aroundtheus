@@ -109,6 +109,8 @@
 
 .modal__close_type_preview {
   position: absolute;
+  /* top: -44.62px;
+  left: calc(100% - px); */
 }
 
 .modal__image {
