@@ -71,8 +71,7 @@ const addCardModalCloseButton = document.querySelector(
 const addCardCreateButton = addNewCardModal.querySelector(
   "#modal-profile-create-button"
 );
-//const likeButtons = document.querySelectorAll(".js-card-like-button");
-
+const likeButtons = document.querySelector;
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                   Functions                                   ||
 // ! ||--------------------------------------------------------------------------------||
@@ -91,8 +90,6 @@ function getCardElement(cardData) {
   //access the card title and image and store them in variables
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
-  const likeButton = cardElement.querySelector(".js-card-like-button");
-
   //set the path to the image to the link field of the object
   cardImageEl.src = cardData.link;
   //set the image alt text to the name field of the object
@@ -100,11 +97,6 @@ function getCardElement(cardData) {
   //set the card title to the name field of the object
   cardTitleEl.textContent = cardData.name;
   //return the ready HTML element with the filled-in data
-
-  likeButton.addEventListener("click", () => {
-    likeButton.classList.toggle("card__like-button_active");
-  });
-
   return cardElement;
 }
 

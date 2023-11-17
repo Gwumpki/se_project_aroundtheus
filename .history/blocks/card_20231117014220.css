@@ -43,8 +43,7 @@
 }
 
 .card__like-button_active {
-  background-image: url(../images/like-active.svg);
-  background-size: contain;
+  background-image: ;
 }
 
 .card__like-button:hover {

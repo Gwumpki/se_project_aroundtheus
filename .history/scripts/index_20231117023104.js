@@ -91,7 +91,7 @@ function getCardElement(cardData) {
   //access the card title and image and store them in variables
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
-  const likeButton = cardElement.querySelector(".js-card-like-button");
+  const likeButton = cardElement.querySelector("");
 
   //set the path to the image to the link field of the object
   cardImageEl.src = cardData.link;
