@@ -110,7 +110,7 @@
 .modal__close_type_preview {
   position: absolute;
   top: -44.62px;
-  left: calc(100% - 30px);
+  left: calc(100% - 24px);
 }
 
 .modal__image {
@@ -118,7 +118,6 @@
   height: 540px;
   display: flex;
   position: relative;
-  flex-direction: column;
 }
 
 .modal__title_type_preview {

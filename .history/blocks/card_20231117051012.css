@@ -3,11 +3,6 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
-}
-
-.cards__list {
-  position: relative;
 }
 
 .card__image {
@@ -27,7 +22,7 @@
   padding: 0;
   transition: opacity 0.5s linear;
   top: 18px;
-  right: 15px;
+  right: ;
 }
 
 .card__button_delete:hover {

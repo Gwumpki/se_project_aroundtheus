@@ -110,9 +110,9 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
   //return the ready HTML element with the filled-in data
 
-  previewModalImage.src = cardData.link;
-  previewModalImage.alt = cardData.name;
-  previewModalTitle.textContent = cardData.name;
+  // previewModalImage.src = cardData.link;
+  // previewModalImage.alt = cardData.name;
+  // previewModalTitle.textContent = cardData.name;
 
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
@@ -123,9 +123,9 @@ function getCardElement(cardData) {
   // });
 
   cardImageEl.addEventListener("click", (cardData) => {
-    // previewModalImage.src = cardData.link;
-    // previewModalImage.alt = cardData.name;
-    // previewModalTitle.textContent = cardData.name;
+    previewModalImage.src = cardData.link;
+    previewModalImage.alt = cardData.name;
+    previewModalTitle.textContent = cardData.name;
     openModal(previewImageModal);
   });
 

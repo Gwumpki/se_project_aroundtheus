@@ -7,9 +7,7 @@
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
   /* display: flex; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
   padding: 0 19px;
   visibility: hidden;
   opacity: 0;
@@ -102,26 +100,13 @@
   cursor: pointer;
 }
 
-.modal__image_container {
-  padding: 0;
-  position: relative;
-}
-
-.modal__close_type_preview {
-  position: absolute;
-  top: -44.62px;
-  left: calc(100% - 30px);
-}
-
-.modal__image {
+.modal__preview_image {
   width: 433px;
   height: 540px;
-  display: flex;
   position: relative;
-  flex-direction: column;
 }
 
-.modal__title_type_preview {
+.modal__preview_title {
   color: #fff;
   font-family: Inter;
   font-size: 12px;

@@ -95,9 +95,7 @@ function getCardElement(cardData) {
   const likeButton = cardElement.querySelector(".js-card-like-button");
   const deleteButton = cardElement.querySelector("js-card-delete-button");
   const previewModalImage = document.querySelector(".modal__image");
-  const previewModalTitle = document.querySelector(
-    ".modal__title_type_preview"
-  );
+  const previewModalTitle = document.querySelector(".modal__preview_title");
   const previewModalCloseButton = document.querySelector(
     "#preview-image-close-button"
   );
@@ -110,9 +108,9 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
   //return the ready HTML element with the filled-in data
 
-  previewModalImage.src = cardData.link;
-  previewModalImage.alt = cardData.name;
-  previewModalTitle.textContent = cardData.name;
+  // previewModalImage.src = cardData.link;
+  // previewModalImage.alt = cardData.name;
+  // previewModalTitle.textContent = cardData.name;
 
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");

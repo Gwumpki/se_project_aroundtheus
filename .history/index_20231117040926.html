@@ -122,27 +122,28 @@
     </div>
 
     <!--Preview Image Modal-->
+
     <div class="modal" id="preview-image-modal">
-      <div class="modal__image_container">
+      <div class="modal__container">
         <button
           type="button"
           aria-label="close"
-          class="modal__close modal__close_type_preview"
-          id="preview-image-close-button"
+          class="modal__close"
+          id="add-card-close-button"
         ></button>
-        <img src="" class="modal__image" alt="" />
-        <p class="modal__title_type_preview"></p>
+        <img src="" class="card__image" alt="" />
+        <p class="modal__title">New place</p>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
+        <img src="" class="card__image" alt="" />
         <button
           type="button"
           class="card__button_delete js-card-delete-button"
           aria-label="delete"
         ></button>
-        <img src="" class="card__image" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button

@@ -3,7 +3,6 @@
   flex-direction: column;
   border-radius: 10px;
   overflow: hidden;
-  position: relative;
 }
 
 .cards__list {

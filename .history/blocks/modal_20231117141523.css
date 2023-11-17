@@ -102,26 +102,24 @@
   cursor: pointer;
 }
 
-.modal__image_container {
+.modal__preview_container {
   padding: 0;
-  position: relative;
 }
 
-.modal__close_type_preview {
+.modal__preview_button_close {
   position: absolute;
   top: -44.62px;
-  left: calc(100% - 30px);
+  left: calc(100% - 24px);
+  z-index: 99999;
 }
 
-.modal__image {
+.modal__preview_image {
   width: 433px;
   height: 540px;
-  display: flex;
   position: relative;
-  flex-direction: column;
 }
 
-.modal__title_type_preview {
+.modal__preview_title {
   color: #fff;
   font-family: Inter;
   font-size: 12px;
