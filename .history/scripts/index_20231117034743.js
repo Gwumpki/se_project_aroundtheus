@@ -107,11 +107,7 @@ function getCardElement(cardData) {
   });
 
   // deleteButton.addEventListener("click", () => {
-  //   cardElement.remove();
-  // });
-
-  // cardImageEl.addEventListener("click", () => {
-  //   openModal(previewImageModal);
+  //   deleteButton.remove(cardElement);
   // });
 
   return cardElement;

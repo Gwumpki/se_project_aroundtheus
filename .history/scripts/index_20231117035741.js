@@ -110,10 +110,6 @@ function getCardElement(cardData) {
   //   cardElement.remove();
   // });
 
-  // cardImageEl.addEventListener("click", () => {
-  //   openModal(previewImageModal);
-  // });
-
   return cardElement;
 }
 

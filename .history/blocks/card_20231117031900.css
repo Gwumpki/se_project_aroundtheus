@@ -18,15 +18,13 @@
   height: 19.3px;
   border: none;
   position: absolute;
+  left: 249px;
+  right: 15px;
+  top: 18px;
+  bottom: 324px;
   margin: 0;
   padding: 0;
-  transition: opacity 0.5s linear;
-  justify-content: flex-end;
-}
-
-.card__button_delete:hover {
-  opacity: 0.6;
-  cursor: pointer;
+  border: none;
 }
 
 .card__description {

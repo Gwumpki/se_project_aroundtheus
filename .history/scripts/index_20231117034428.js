@@ -92,7 +92,7 @@ function getCardElement(cardData) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
   const likeButton = cardElement.querySelector(".js-card-like-button");
-  const deleteButton = cardElement.querySelector("js-card-delete-button");
+  const deleteButton = cardElement.querySelector("");
 
   //set the path to the image to the link field of the object
   cardImageEl.src = cardData.link;
@@ -105,14 +105,6 @@ function getCardElement(cardData) {
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
   });
-
-  // deleteButton.addEventListener("click", () => {
-  //   cardElement.remove();
-  // });
-
-  // cardImageEl.addEventListener("click", () => {
-  //   openModal(previewImageModal);
-  // });
 
   return cardElement;
 }

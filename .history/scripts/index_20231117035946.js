@@ -110,9 +110,9 @@ function getCardElement(cardData) {
   //   cardElement.remove();
   // });
 
-  // cardImageEl.addEventListener("click", () => {
-  //   openModal(previewImageModal);
-  // });
+  cardImageEl.addEventListener("click", () => {
+    likeButton.classList.toggle("card__like-button_active");
+  });
 
   return cardElement;
 }
