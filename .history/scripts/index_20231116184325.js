@@ -39,24 +39,16 @@ const profileTitle = document.querySelector(".profile__title"); //done for simpl
 const profileDescription = document.querySelector(".profile__description");
 const modalProfileEditForm = document.forms["profile-edit-form"];
 
-// Modal Elements
-const profileEditModal = document.querySelector("#profile-edit-modal");
-const addNewCardModal = document.querySelector("#add-new-card-modal");
-const modalProfileTitleInput = document.querySelector(".js-profile-title"); //creating another class just for javascript use//
-const modalProfileDescriptionInput = document.querySelector(
-  ".js-profile-description"
-);
-
 //Card Array
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
 //Buttons
-const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
 const profileEditModalCloseButton = profileEditModal.querySelector(
   "#modal-close-button"
 );
+const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
 const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
@@ -64,8 +56,13 @@ const addNewCardButton = document.querySelector("#profile-add-button");
 const addCardModalCloseButton = document.querySelector(
   "#add-card-close-button"
 );
-const addCardCreateButton = addNewCardModal.querySelector(
-  "#modal-profile-create-button"
+
+// Modal Elements
+const profileEditModal = document.querySelector("#profile-edit-modal");
+const addNewCardModal = document.querySelector("#add-new-card-modal");
+const modalProfileTitleInput = document.querySelector(".js-profile-title"); //creating another class just for javascript use//
+const modalProfileDescriptionInput = document.querySelector(
+  ".js-profile-description"
 );
 
 // ! ||--------------------------------------------------------------------------------||
@@ -109,7 +106,7 @@ function handleProfileEditSubmit(event) {
   event.preventDefault();
   profileTitle.textContent = modalProfileTitleInput.value;
   profileDescription.textContent = modalProfileDescriptionInput.value;
-  closePopup(profileEditModal);
+  closePopup();
 }
 
 // ! ||--------------------------------------------------------------------------------||
@@ -117,8 +114,6 @@ function handleProfileEditSubmit(event) {
 // ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
-  modalProfileTitleInput.value = profileTitle.textContent;
-  modalProfileDescriptionInput.value = profileDescription.textContent;
   openModal(profileEditModal);
 });
 

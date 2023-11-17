@@ -64,9 +64,7 @@ const addNewCardButton = document.querySelector("#profile-add-button");
 const addCardModalCloseButton = document.querySelector(
   "#add-card-close-button"
 );
-const addCardCreateButton = addNewCardModal.querySelector(
-  "#modal-profile-create-button"
-);
+const addCardCreateButton = addNewCardModal.querySelector("#");
 
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                   Functions                                   ||
@@ -117,8 +115,6 @@ function handleProfileEditSubmit(event) {
 // ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
-  modalProfileTitleInput.value = profileTitle.textContent;
-  modalProfileDescriptionInput.value = profileDescription.textContent;
   openModal(profileEditModal);
 });
 

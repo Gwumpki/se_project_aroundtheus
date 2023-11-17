@@ -53,19 +53,16 @@ const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
 //Buttons
-const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
 const profileEditModalCloseButton = profileEditModal.querySelector(
   "#modal-close-button"
 );
+const profileEditButton = document.querySelector("#profile-edit-button"); //using ID to select//
 const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
 const addNewCardButton = document.querySelector("#profile-add-button");
 const addCardModalCloseButton = document.querySelector(
   "#add-card-close-button"
-);
-const addCardCreateButton = addNewCardModal.querySelector(
-  "#modal-profile-create-button"
 );
 
 // ! ||--------------------------------------------------------------------------------||
@@ -117,8 +114,6 @@ function handleProfileEditSubmit(event) {
 // ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
-  modalProfileTitleInput.value = profileTitle.textContent;
-  modalProfileDescriptionInput.value = profileDescription.textContent;
   openModal(profileEditModal);
 });
 
