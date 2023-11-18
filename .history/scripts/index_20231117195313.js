@@ -88,7 +88,7 @@ function openModal(modal) {
 
 function renderCard(cardData, wrapper) {
   const cardElement = getCardElement(cardData);
-  wrapper.append(cardElement);
+  wrapper.prepend(cardElement);
 }
 
 function getCardElement(cardData) {

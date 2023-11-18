@@ -88,7 +88,7 @@ function openModal(modal) {
 
 function renderCard(cardData, wrapper) {
   const cardElement = getCardElement(cardData);
-  wrapper.append(cardElement);
+  wrapper.prepend(cardElement);
 }
 
 function getCardElement(cardData) {
@@ -141,6 +141,11 @@ function getCardElement(cardData) {
   return cardElement;
 }
 
+function renderCard(cardData, wrapper) {
+  const cardElement = getCardElement(cardData);
+  wrapper.prepend(cardElement);
+}
+
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                 Event Handlers                                 ||
 // ! ||--------------------------------------------------------------------------------||
@@ -159,7 +164,7 @@ function handleNewCardCreateSubmit(event) {
   //   name,
   //   link,
   // });             Not doing this because not supposed to repeat self (D.R.Y)
-  renderCard({ name, link }, cardsWrap);
+  renderCard({ name, link });
   event.target.reset();
   closePopup(addNewCardModal);
 }

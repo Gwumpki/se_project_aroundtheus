@@ -88,7 +88,7 @@ function openModal(modal) {
 
 function renderCard(cardData, wrapper) {
   const cardElement = getCardElement(cardData);
-  wrapper.append(cardElement);
+  wrapper.prepend(cardElement);
 }
 
 function getCardElement(cardData) {
@@ -115,9 +115,9 @@ function getCardElement(cardData) {
   cardTitleEl.textContent = cardData.name;
   //return the ready HTML element with the filled-in data
 
-  previewModalImage.src = cardData.link;
-  previewModalImage.alt = cardData.name;
-  previewModalTitle.textContent = cardData.name;
+  // previewModalImage.src = cardData.link;
+  // previewModalImage.alt = cardData.name;
+  // previewModalTitle.textContent = cardData.name;
 
   likeButton.addEventListener("click", () => {
     likeButton.classList.toggle("card__like-button_active");
@@ -128,9 +128,9 @@ function getCardElement(cardData) {
   // });
 
   cardImageEl.addEventListener("click", (cardData) => {
-    // previewModalImage.src = cardData.link;
-    // previewModalImage.alt = cardData.name;
-    // previewModalTitle.textContent = cardData.name;
+    previewModalImage.src = cardData.link;
+    previewModalImage.alt = cardData.name;
+    previewModalTitle.textContent = cardData.name;
     openModal(previewImageModal);
   });
 
@@ -139,6 +139,11 @@ function getCardElement(cardData) {
   });
 
   return cardElement;
+}
+
+function renderCard(cardData, wrapper) {
+  const cardElement = getCardElement(cardData);
+  wrapper.prepend(cardElement);
 }
 
 // ! ||--------------------------------------------------------------------------------||
@@ -160,7 +165,6 @@ function handleNewCardCreateSubmit(event) {
   //   link,
   // });             Not doing this because not supposed to repeat self (D.R.Y)
   renderCard({ name, link }, cardsWrap);
-  event.target.reset();
   closePopup(addNewCardModal);
 }
 // ! ||--------------------------------------------------------------------------------||
