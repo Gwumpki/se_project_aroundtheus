@@ -103,6 +103,7 @@
 }
 
 .modal__preview {
+  overflow: scroll;
 }
 
 .modal__container_image {

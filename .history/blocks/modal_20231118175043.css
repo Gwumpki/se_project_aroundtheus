@@ -102,10 +102,8 @@
   cursor: pointer;
 }
 
-.modal__preview {
-}
-
 .modal__container_image {
+  padding: 0;
   position: relative;
 }
 
@@ -114,8 +112,8 @@
 }
 
 .modal__image {
-  max-width: 816px;
-  max-height: 540px;
+  width: 433px;
+  height: 540px;
   display: flex;
   position: relative;
   flex-direction: column;

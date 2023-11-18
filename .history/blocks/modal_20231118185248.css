@@ -103,6 +103,8 @@
 }
 
 .modal__preview {
+  /* padding-top: 90px;
+  padding-bottom: 90px; */
 }
 
 .modal__container_image {
@@ -119,6 +121,8 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .modal__title_type_preview {

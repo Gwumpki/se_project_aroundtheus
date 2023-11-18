@@ -103,10 +103,14 @@
 }
 
 .modal__preview {
+  /* padding-top: 90px;
+  padding-bottom: 90px; */
 }
 
 .modal__container_image {
   position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .modal__close_type_preview {

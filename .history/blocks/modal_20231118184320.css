@@ -103,6 +103,7 @@
 }
 
 .modal__preview {
+  top: 90px;
 }
 
 .modal__container_image {

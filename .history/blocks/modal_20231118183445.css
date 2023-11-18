@@ -103,9 +103,12 @@
 }
 
 .modal__preview {
+  /* padding: 90px 424px 90px; */
+  margin: 90px 424px 90px;
 }
 
 .modal__container_image {
+  /* padding: padding: 90px 424px 90px; */
   position: relative;
 }
 

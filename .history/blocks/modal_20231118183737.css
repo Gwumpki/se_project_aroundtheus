@@ -103,6 +103,8 @@
 }
 
 .modal__preview {
+  display: flex;
+  align-content: center;
 }
 
 .modal__container_image {

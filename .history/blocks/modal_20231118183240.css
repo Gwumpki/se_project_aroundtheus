@@ -103,9 +103,11 @@
 }
 
 .modal__preview {
+  padding: 90px 424px 90px;
 }
 
 .modal__container_image {
+  padding: 0;
   position: relative;
 }
 
