@@ -102,17 +102,24 @@
   cursor: pointer;
 }
 
+.modal__preview {
+}
+
 .modal__container_image {
   position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .modal__close_type_preview {
   position: absolute;
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 
 .modal__image {
-  max-width: 75vw;
-  max-height: 75vh;
+  max-width: 816px;
+  max-height: 540px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -148,27 +155,5 @@
 
   .modal__submit_type_save {
     font-size: 14px;
-  }
-
-  .modal__preview {
-    padding: 0;
-  }
-
-  .modal__close_type_preview {
-    top: -25px;
-    right: -30px;
-  }
-}
-
-@media screen and (max-width: 377px) {
-  .modal__container_image {
-    left: 20px;
-  }
-
-  .modal__close_type_preview {
-    position: relative;
-
-    top: 2px;
-    right: -255px;
   }
 }

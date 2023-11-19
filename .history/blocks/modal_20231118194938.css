@@ -160,15 +160,9 @@
   }
 }
 
-@media screen and (max-width: 377px) {
-  .modal__container_image {
-    left: 20px;
-  }
-
+@media screen and (max-width: 320px) {
   .modal__close_type_preview {
-    position: relative;
-
-    top: 2px;
-    right: -255px;
+    top: -25px;
+    right: 30px;
   }
 }

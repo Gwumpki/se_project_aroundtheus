@@ -161,7 +161,7 @@
 }
 
 @media screen and (max-width: 377px) {
-  .modal__container_image {
+  .modal__preview {
     left: 20px;
   }
 
@@ -169,6 +169,6 @@
     position: relative;
 
     top: 2px;
-    right: -255px;
+    right: -260px;
   }
 }
