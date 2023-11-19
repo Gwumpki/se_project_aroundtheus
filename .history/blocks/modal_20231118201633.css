@@ -99,6 +99,7 @@
 
 .modal__submit:hover {
   background: rgba(0, 0, 0, 0.8);
+  /* opacity: 0.8; */
   cursor: pointer;
 }
 

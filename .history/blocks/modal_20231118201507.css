@@ -94,11 +94,11 @@
   font-family: Inter;
   font-size: 18px;
   border-style: none;
-  transition: background 0.5s linear;
+  transition: opacity 0.5s linear;
 }
 
 .modal__submit:hover {
-  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
   cursor: pointer;
 }
 
