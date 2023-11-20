@@ -6,6 +6,7 @@
   right: 0;
   z-index: 999;
   background: rgba(0, 0, 0, 0.5);
+  /* display: flex; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,7 @@
 }
 
 .modal_opened {
-  /* display: flex; should have only the styles related to opened modal state, and they are opacity, visibility, transition and pointer-events (none for closed popup and all for opened popup - it disables interactions with the popup while it's closed).*/
+  display: flex;
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 0.6s;
@@ -101,7 +102,7 @@
   cursor: pointer;
 }
 
-.modal__preview_image {
+.modal__container_image {
   position: relative;
 }
 
@@ -117,11 +118,10 @@
   flex-direction: column;
 }
 
-.modal__preview_title {
+.modal__title_type_preview {
   color: #fff;
   font-family: Inter;
   font-size: 12px;
-  font-weight: 400;
   width: 291px;
   height: 12px;
   margin: 10px 0 0;

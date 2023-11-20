@@ -67,7 +67,6 @@
             name="title"
             class="modal__input js-profile-title"
             placeholder="Name"
-            required
           />
           <input
             type="text"
@@ -105,11 +104,10 @@
             placeholder="Title"
           />
           <input
-            type="url"
+            type="text"
             name="link"
             class="modal__input js-new-card-link"
             placeholder="Image link"
-            required
           />
           <button
             type="submit"
@@ -125,15 +123,15 @@
 
     <!--Preview Image Modal-->
     <div class="modal" id="preview-image-modal">
-      <div class="modal__preview_image">
+      <div class="modal__container modal__container_image">
         <button
           type="button"
           aria-label="close"
           class="modal__close modal__close_type_preview"
           id="preview-image-close-button"
         ></button>
-        <img src="#" class="modal__image" id="preview-modal-image" alt="" />
-        <h2 class="modal__preview_title" id="preview-modal-title"></h2>
+        <img src="#" class="modal__image" alt="" />
+        <p class="modal__title modal__title_type_preview"></p>
       </div>
     </div>
 
@@ -156,6 +154,6 @@
       </li>
     </template>
 
-    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

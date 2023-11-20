@@ -52,7 +52,7 @@ const newCardTitleInput =
   modalAddNewCardForm.querySelector(".js-new-card-title");
 const newCardLinkInput = modalAddNewCardForm.querySelector(".js-new-card-link");
 // const previewModalImage = document.querySelector(".modal__image");
-// const previewModalTitle = document.querySelector(".modal__title_type_preview");       //I want these variables here with the rest of the global but for some reason moving them here breaks the modal?
+// const previewModalTitle = document.querySelector(".modal__title_type_preview");
 
 //Card Array
 const cardsWrap = document.querySelector(".cards__list");
@@ -95,7 +95,7 @@ function renderCard(cardData, wrapper) {
   const cardElement = getCardElement(cardData);
   wrapper.prepend(cardElement);
 }
-const previewModalImage = document.querySelector("#preview-modal-image");
+const previewModalImage = document.querySelector(".modal__image");
 const previewModalTitle = document.querySelector("#preview-modal-title");
 const previewModalCloseButton = document.querySelector(
   "#preview-image-close-button"
@@ -205,3 +205,9 @@ initialCards.forEach((cardData) => renderCard(cardData, cardsWrap));
 // for (let i = 0; i < initialCards.length; i++) {
 //   const card = initialCards[i];
 // }
+
+// const previewModalImage = document.querySelector(".modal__image");
+// const previewModalTitle = document.querySelector(".modal__title_type_preview");
+// const previewModalCloseButton = document.querySelector(
+//   "#preview-image-close-button"
+// );

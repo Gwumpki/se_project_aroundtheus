@@ -51,8 +51,8 @@ const modalProfileDescriptionInput = document.querySelector(
 const newCardTitleInput =
   modalAddNewCardForm.querySelector(".js-new-card-title");
 const newCardLinkInput = modalAddNewCardForm.querySelector(".js-new-card-link");
-// const previewModalImage = document.querySelector(".modal__image");
-// const previewModalTitle = document.querySelector(".modal__title_type_preview");       //I want these variables here with the rest of the global but for some reason moving them here breaks the modal?
+const previewModalImage = document.querySelector(".modal__image");
+const previewModalTitle = document.querySelector(".modal__title_type_preview");
 
 //Card Array
 const cardsWrap = document.querySelector(".cards__list");
@@ -64,9 +64,9 @@ const profileEditButton = document.querySelector("#profile-edit-button"); //usin
 const profileEditModalCloseButton = profileEditModal.querySelector(
   "#modal-close-button"
 );
-// const previewModalCloseButton = document.querySelector(
-//   "#preview-image-close-button"
-// );
+const previewModalCloseButton = document.querySelector(
+  "#preview-image-close-button"
+);
 const modalProfileSaveButton = profileEditModal.querySelector(
   "#modal-profile-save-button"
 );
