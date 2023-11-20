@@ -172,9 +172,7 @@ function openEditedProfileModal() {
 // ! ||                                 Event Listeners                                ||
 // ! ||--------------------------------------------------------------------------------||
 
-profileEditButton.addEventListener("click", () => {
-  openEditedProfileModal(); //hopefully this is what reviewer meant in "could be improved"
-});
+profileEditButton.addEventListener("click", openEditedProfileModal());
 
 profileEditModalCloseButton.addEventListener("click", () => {
   closePopup(profileEditModal);

@@ -173,7 +173,7 @@ function openEditedProfileModal() {
 // ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
-  openEditedProfileModal(); //hopefully this is what reviewer meant in "could be improved"
+  openEditedProfileModal(); //hopefully this is what reviewer meant in
 });
 
 profileEditModalCloseButton.addEventListener("click", () => {

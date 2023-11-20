@@ -163,17 +163,14 @@ function fillProfileEditForm() {
   modalProfileTitleInput.value = profileTitle.textContent;
   modalProfileDescriptionInput.value = profileDescription.textContent;
 }
-
-function openEditedProfileModal() {
-  fillProfileEditForm();
-  openModal(profileEditModal);
-}
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                 Event Listeners                                ||
 // ! ||--------------------------------------------------------------------------------||
 
 profileEditButton.addEventListener("click", () => {
-  openEditedProfileModal(); //hopefully this is what reviewer meant in "could be improved"
+  modalProfileTitleInput.value = profileTitle.textContent;
+  modalProfileDescriptionInput.value = profileDescription.textContent;
+  openModal(profileEditModal);
 });
 
 profileEditModalCloseButton.addEventListener("click", () => {
