@@ -101,7 +101,7 @@
   cursor: pointer;
 }
 
-.modal__container_container_preview {
+.modal__container_type_preview-modal {
   position: relative;
 }
 
@@ -117,7 +117,7 @@
   flex-direction: column;
 }
 
-.modal__title_title_preview {
+.modal__preview_title {
   color: #fff;
   font-family: Inter;
   font-size: 12px;
@@ -157,7 +157,7 @@
 }
 
 @media screen and (max-width: 377px) {
-  .modal__container_container_preview {
+  .modal__container_type_preview-modal {
     left: 20px;
   }
 

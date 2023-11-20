@@ -169,6 +169,15 @@ function handleNewCardCreateSubmit(event) {
   closePopup(addNewCardModal);
 }
 
+function fillProfileEditForm() {
+  modalProfileTitleInput.value = profileTitle.textContent;
+  modalProfileDescriptionInput.value = profileDescription.textContent;
+}
+
+function openEditedProfileModal() {
+  fillProfileEditForm();
+  openModal(profileEditModal);
+} // CHANGES ARE HERE MOVED THESE TO FUNCTIONS
 // ! ||--------------------------------------------------------------------------------||
 // ! ||                                 Event Listeners                                ||
 // ! ||--------------------------------------------------------------------------------||
